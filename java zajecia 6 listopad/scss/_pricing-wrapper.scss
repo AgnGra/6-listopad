@@ -1,0 +1,78 @@
+.pricing{
+margin:50px 0;
+padding: 14px 45px;
+}
+
+
+
+.pricing-wrapper{
+    @include flex(center,center,20px);
+
+
+    button{
+    
+        text-align: center;
+       
+        width: 100%;
+        padding: 12px 0px;
+        margin: 70px 0px;
+        color:white;
+        border:none;
+        background-color: green;
+        border-radius: 5px;
+    
+    }
+    span{
+        color:black;
+        font-size: 40px;
+    }
+    .best-wrapper{
+       margin: 50px;
+    }
+    .bi-currency-dollar{
+      position: relative;
+      top: -1px;
+       
+    }
+    
+    .text-top{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        margin-bottom: 30px;
+        color: $color-white;
+    }
+    .month{
+        font-size: 16px;
+        position: relative;
+        top: 17px;
+        color: $color-white;;
+    }
+    .cena{
+        color:$color-white;
+    }
+   
+    
+    }
+.pricing-card{
+    
+   
+    @extend %glass;
+    
+        text-align:betwenn;
+        flex:1;
+        padding: 30px;
+        color: $color-white;
+        border-radius: 10px;
+        transition: 0.5s;
+        &:hover{
+            background-color: $color-white;
+            color:rgb(33,33,33);
+            transform: translateY(-20px);
+        }
+        &:hover > img{
+            border-color:rgb(33,33,33);
+            transition: 0.5s;
+    
+}
+}
